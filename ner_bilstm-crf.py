@@ -35,7 +35,6 @@ class get_sentences(object):
         self.grouped = self.dataset.groupby("Sentence").apply(agg_func)
         self.sentences = [s for s in self.grouped]
 
-
 getter = get_sentences(data)
 sentences = getter.sentences
 
